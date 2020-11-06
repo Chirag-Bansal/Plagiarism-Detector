@@ -10,9 +10,9 @@ like English, because the main structures that stand out in a text are linear ow
 in most languages. Their relevance to our use-case is that in a plagiarized document, the frequency of any
 particular phrase should be heuristically similar to that in the document where it was plagiarized from.
 
-##High-level Description of the Algorithm
+## High-level Description of the Algorithm
 
-From any given text, we nd the sorted array containing all possible 3-gram hashes in the text. To nd the
+From any given text, we find the sorted array containing all possible 3-gram hashes in the text. To find the
 similarity between the texts, we extract frequency vectors of 3-grams corresponding to both texts, sorted
-according to 3-gram hashes in both the texts (and if a hash is not found in one le, we simply assign the
-value 0 to the frequency of that hash), and nd the cosine similarity between any two such vectors.
+according to 3-gram hashes in both the texts (and if a hash is not found in one file, we simply assign the
+value 0 to the frequency of that hash), and find the cosine similarity between any two such vectors.
